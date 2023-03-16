@@ -14,22 +14,46 @@
 <body>
     <main>
         <header>
-            <img src="media/logo.png" alt="">
+
             <div>Dog Breed Quiz</div>
+
+            <section id="log_ut" class="quiz"></section>
         </header>
 
-        <section></section>
+        <section id="login_reg">
+            <h1>LOGIN</h1>
+
+            <div>
+                <p>Username:</p>
+                <input id="username" type="text">
+            </div>
+            <div>
+                <p>Password:</p>
+                <input id="password" type="password">
+            </div>
+
+            <p id="magic_text">Let the magic begin!</p>
+
+            <div id="buttons">
+                <button class="login_button">Login</button>
+                <button class="reg_button">Register</button>
+            </div>
+            <p id="link">New to this? Click here to register</p>
+
+        </section>
 
         <footer>The dog breed Quiz is made possible to the free API <a href="https://dog.ceo/dog-api" target="_blank"
                 title="Link to dog API">DOG CEO Zine</a></footer>
 
     </main>
 
-    <div id="overlay">
+    <!-- <div id="overlay">
         <div id="message_box"></div>
     </div>
+    -->
 
     <script src="JS/data.js"></script>
+    <script src="./JS/server_connections.js"></script>
     <script src="JS/login_reg.js"></script>
 
 </body>
