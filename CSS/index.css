@@ -1,0 +1,99 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/RobotoCondensed_regular/RobotoCondensedRegular.ttf);
+}
+
+* {
+    font-family: Roboto;
+    color: black;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main {
+    height: 606px;
+    width: 337px;
+    background-color: beige;
+    padding: 25px;
+    border-radius: 25px;
+    display: grid;
+    grid-template-rows: repeat(auto, 1fr);
+    gap:20px;
+}
+
+/*#login_reg {
+    display: none;
+}*/
+
+#title{
+    display: flex;
+    justify-content: end;
+}
+
+#white_cover {
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 606px;
+    width: 337px;
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#white_cover>.loading_text {
+    width: 200px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(211, 211, 211, 0.7);
+}
+
+#white_cover>.loading_text::after {
+    content: "";
+    animation-name: dots;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 500ms;
+}
+
+@keyframes dots {
+    0% {
+        content: ""
+    }
+
+    10% {
+        content: "."
+    }
+
+    50% {
+        content: ".."
+    }
+
+    100% {
+        content: "..."
+    }
+
+}
+
+.teapot_popup {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    height: 200px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
